@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Cart Management</title>
+</head>
+<body>
+    
+    <h1 id="title">My Shopping Cart</h1>
+    <div id="container">
+        <div class="box">
+            <h3 class="boxTitle">Mechanical Keyboard</h3>
+            <p class="piece">Quantity: 2</p>
+            <p class="price">1450.00 TL</p>
+            <button type="button" class="removeButton" onclick="removeProduct(this)">Remove from Cart</button>
+        </div>
+        <div class="box">
+            <h3 class="boxTitle">Gaming Mouse</h3>
+            <p class="piece">Quantity: 3</p>
+            <p class="price">450.75 TL</p>
+            <button type="button" class="removeButton" onclick="removeProduct(this)">Remove from Cart</button>
+        </div>
+        <div class="box">
+            <h3 class="boxTitle">Monitor Stand</h3>
+            <p class="piece">Quantity: 1</p>
+            <p class="price">320.25 TL</p>
+            <button type="button" class="removeButton" onclick="removeProduct(this)">Remove from Cart</button>
+        </div>
+        <button type="button" id="resultButton" onclick="calculate()">Calculate / Update Cart</button>
+        <div id="invoiceSummary">
+            <h2 id="invoiceTitle">Invoice Summary</h2>
+            <p id="totalAmount">Total Amount: 0 TL</p>
+            <p id="shippingFee">Shipping Fee: <span>49.99 TL</span></p>
+            <p id="delivery">Estimated Delivery: Not calculated</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
